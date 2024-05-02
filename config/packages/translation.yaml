@@ -1,0 +1,7 @@
+framework:
+    translator:
+        default_path: '%kernel.project_dir%/translations'  # Chemin vers le dossier de traductions
+        fallbacks: ['en']  # Langue(s) de repli si la traduction n'est pas disponible dans la langue demandée
+
+    # Assurez-vous que le reste de votre configuration framework est ici et est correct.
+    # Par exemple, la configuration de la session, des formulaires, etc.
