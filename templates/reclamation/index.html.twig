@@ -1,0 +1,8 @@
+{# templates/reclamation/index.html.twig #}
+
+{{ form_start(form) }}
+    {{ form_row(form.pharmacyName) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.description) }}
+    <button type="submit" class="btn btn-primary">Envoyer la réclamation</button>
+{{ form_end(form) }}

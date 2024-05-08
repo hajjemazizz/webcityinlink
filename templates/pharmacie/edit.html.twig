@@ -1,0 +1,72 @@
+{% extends 'baseback.html.twig' %}
+
+{% block title %}Edit Pharmacie{% endblock %}
+
+{% block body %}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    .form-control {
+        height: calc(2.25rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+    }
+
+    .btn-primary, .btn-danger {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        width: 100%;  /* Full width buttons */
+    }
+
+    .btn-danger {
+        background-color: #dc3545; /* Bootstrap red for delete */
+        border-color: #dc3545;
+        margin-top: 1rem;  /* Separate from the update button */
+    }
+
+    .btn-link {
+        display: block; /* Block level makes it easier to click */
+        color: #007bff;
+        margin-top: 1rem; /* Consistent spacing */
+    }
+
+    .card-header {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #e3e6f0;
+        text-align: center;
+    }
+
+    .card {
+        border: 1px solid #e3e6f0;
+        border-radius: .25rem;
+    }
+
+    .card-body {
+        padding: 2rem; /* More padding inside the card */
+    }
+</style>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Edit Pharmacie</h4>
+                </div>
+                <div class="card-body">
+                    {{ include('pharmacie/_form.html.twig', {'button_label': 'Update'}) }}
+                </div>
+            </div>
+            <div class="mt-3 text-center">
+                <a href="{{ path('app_pharmacie_index') }}" class="btn btn-link">Back to list</a>
+                {{ include('pharmacie/_delete_form.html.twig') }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

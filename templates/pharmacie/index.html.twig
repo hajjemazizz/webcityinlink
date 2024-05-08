@@ -1,0 +1,52 @@
+{% extends 'baseback.html.twig' %}
+
+{% block title %} Pharmacies{% endblock %}
+
+{% block body %}
+    <h1>Pharmacies</h1>
+
+    {# Search form #}
+    <form action="{{ path('app_pharmacie_search') }}" method="get">
+        <input type="text" name="term" placeholder="Rechercher..." required>
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>IdPharmacie</th>
+                <th>Nom</th>
+                <th>Adresse</th>
+                <th>Contact</th>
+                <th>Note</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for pharmacie in pagination %}
+            <tr>
+                <td>{{ pharmacie.idPharmacie }}</td>
+                <td>{{ pharmacie.nom }}</td>
+                <td>{{ pharmacie.adresse }}</td>
+                <td>{{ pharmacie.contact }}</td>
+                <td>{{ pharmacie.note }}</td>
+                <td>
+                    <a href="{{ path('app_pharmacie_show', {'idPharmacie': pharmacie.idPharmacie}) }}">Voir</a>
+                    <a href="{{ path('app_pharmacie_edit', {'idPharmacie': pharmacie.idPharmacie}) }}">Éditer</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">Aucun enregistrement trouvé</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {# Pagination controls #}
+    <div class="pagination">
+        {{ knp_pagination_render(pagination) }}
+    </div>
+
+    <a href="{{ path('app_pharmacie_new') }}">Créer nouveau</a>
+{% endblock %}
