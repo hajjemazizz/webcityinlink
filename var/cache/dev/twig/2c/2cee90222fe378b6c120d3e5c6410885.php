@@ -1847,6 +1847,6 @@ class __TwigTemplate_62a375e666453b57a424c2ebe5e7174d extends Template
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\vendor\\doctrine\\doctrine-bundle\\templates\\Collector\\db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\vendor\\doctrine\\doctrine-bundle\\templates\\Collector\\db.html.twig");
     }
 }

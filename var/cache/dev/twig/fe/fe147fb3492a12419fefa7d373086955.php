@@ -337,6 +337,6 @@ class __TwigTemplate_e2afdf3bc7f19abacde6e3d8b4cfe513 extends Template
     {% endif %}
 
 {% endblock %}
-", "@WebProfiler/Profiler/results.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\results.html.twig");
+", "@WebProfiler/Profiler/results.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\results.html.twig");
     }
 }

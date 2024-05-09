@@ -166,6 +166,6 @@ class __TwigTemplate_b6a82293205248a45452f31cc375bd16 extends Template
     </ul>
 </div>
 {% endblock %}
-", "front/index.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\front\\index.html.twig");
+", "front/index.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\front\\index.html.twig");
     }
 }

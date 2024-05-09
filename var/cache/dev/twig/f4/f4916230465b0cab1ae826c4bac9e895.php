@@ -165,7 +165,9 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
             <!-- Nav Item - Charts -->
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"charts.html\">
-                    <i class=\"fas fa-fw fa-chart-area\"></i>
+                    <i class=\"fas fa-fw fa-chart-area\">
+  <img src=\"img/message.png\" alt=\"Cintatint\" style=\"width: 16px; height: 16px;\">
+</i>
                     <span>Charts</span></a>
             </li>
 
@@ -186,7 +188,7 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
 
             <!-- Sidebar Message -->
             <div class=\"sidebar-card d-none d-lg-flex\">
-                <img class=\"sidebar-card-illustration mb-2\" src=\"img/undraw_rocket.svg\" alt=\"...\">
+                <img class=\"sidebar-card-illustration mb-2\" src=\"img/message.png alt=\"...\">
                 <p class=\"text-center mb-2\"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
                 <a class=\"btn btn-success btn-sm\" href=\"https://startbootstrap.com/theme/sb-admin-pro\">Upgrade to Pro!</a>
             </div>
@@ -263,7 +265,7 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
                                 <h6 class=\"dropdown-header\">
                                     Alerts Center
                                 </h6>
-                                <a class=\"dropdown-item d-flex align-items-center\" href=\"#\">
+                                <a class=\"dropdown-item d-flex align-items-center\" href=\"index.html\">
                                     <div class=\"mr-3\">
                                         <div class=\"icon-circle bg-primary\">
                                             <i class=\"fas fa-file-alt text-white\"></i>
@@ -274,7 +276,7 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
                                         <span class=\"font-weight-bold\">A new monthly report is ready to download!</span>
                                     </div>
                                 </a>
-                                <a class=\"dropdown-item d-flex align-items-center\" href=\"#\">
+                                <a class=\"dropdown-item d-flex align-items-center\" href=\"index.html\">
                                     <div class=\"mr-3\">
                                         <div class=\"icon-circle bg-success\">
                                             <i class=\"fas fa-donate text-white\"></i>
@@ -285,7 +287,7 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
                                         \$290.29 has been deposited into your account!
                                     </div>
                                 </a>
-                                <a class=\"dropdown-item d-flex align-items-center\" href=\"#\">
+                                <a class=\"dropdown-item d-flex align-items-center\" href=\"index.html\">
                                     <div class=\"mr-3\">
                                         <div class=\"icon-circle bg-warning\">
                                             <i class=\"fas fa-exclamation-triangle text-white\"></i>
@@ -951,7 +953,9 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
             <!-- Nav Item - Charts -->
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"charts.html\">
-                    <i class=\"fas fa-fw fa-chart-area\"></i>
+                    <i class=\"fas fa-fw fa-chart-area\">
+  <img src=\"img/message.png\" alt=\"Cintatint\" style=\"width: 16px; height: 16px;\">
+</i>
                     <span>Charts</span></a>
             </li>
 
@@ -972,7 +976,7 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
 
             <!-- Sidebar Message -->
             <div class=\"sidebar-card d-none d-lg-flex\">
-                <img class=\"sidebar-card-illustration mb-2\" src=\"img/undraw_rocket.svg\" alt=\"...\">
+                <img class=\"sidebar-card-illustration mb-2\" src=\"img/message.png alt=\"...\">
                 <p class=\"text-center mb-2\"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
                 <a class=\"btn btn-success btn-sm\" href=\"https://startbootstrap.com/theme/sb-admin-pro\">Upgrade to Pro!</a>
             </div>
@@ -1049,7 +1053,7 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
                                 <h6 class=\"dropdown-header\">
                                     Alerts Center
                                 </h6>
-                                <a class=\"dropdown-item d-flex align-items-center\" href=\"#\">
+                                <a class=\"dropdown-item d-flex align-items-center\" href=\"index.html\">
                                     <div class=\"mr-3\">
                                         <div class=\"icon-circle bg-primary\">
                                             <i class=\"fas fa-file-alt text-white\"></i>
@@ -1060,7 +1064,7 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
                                         <span class=\"font-weight-bold\">A new monthly report is ready to download!</span>
                                     </div>
                                 </a>
-                                <a class=\"dropdown-item d-flex align-items-center\" href=\"#\">
+                                <a class=\"dropdown-item d-flex align-items-center\" href=\"index.html\">
                                     <div class=\"mr-3\">
                                         <div class=\"icon-circle bg-success\">
                                             <i class=\"fas fa-donate text-white\"></i>
@@ -1071,7 +1075,7 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
                                         \$290.29 has been deposited into your account!
                                     </div>
                                 </a>
-                                <a class=\"dropdown-item d-flex align-items-center\" href=\"#\">
+                                <a class=\"dropdown-item d-flex align-items-center\" href=\"index.html\">
                                     <div class=\"mr-3\">
                                         <div class=\"icon-circle bg-warning\">
                                             <i class=\"fas fa-exclamation-triangle text-white\"></i>
@@ -1584,6 +1588,6 @@ class __TwigTemplate_4696293b336eb9aefb1671cd51b3b265 extends Template
 
 </body>
 
-</html>", "back/back.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\back\\back.html.twig");
+</html>", "back/back.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\back\\back.html.twig");
     }
 }

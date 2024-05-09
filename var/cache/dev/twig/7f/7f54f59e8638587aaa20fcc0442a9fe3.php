@@ -173,6 +173,6 @@ class __TwigTemplate_ebc9449f474ae9e9e828b49c8947dca8 extends Template
         </div>
     </div>
 {% endblock %}
-", "admin/account/edit.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\admin\\account\\edit.html.twig");
+", "admin/account/edit.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\admin\\account\\edit.html.twig");
     }
 }

@@ -184,6 +184,6 @@ class __TwigTemplate_59b38f95792d2af9c383541071b49ffb extends Template
         <button type=\"submit\" class=\"btn\">Register</button>
     {{ form_end(registrationForm) }}
 {% endblock %}
-", "registration/register.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\registration\\register.html.twig");
+", "registration/register.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\registration\\register.html.twig");
     }
 }

@@ -28,7 +28,6 @@ security:
                 # where to redirect after logout
                 # target: app_any_route
 
-            provider: users_in_memory
     
 
             # activate different ways to authenticate

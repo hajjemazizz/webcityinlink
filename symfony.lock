@@ -320,9 +320,7 @@
     },
     "twig/extra-bundle": {
         "version": "v3.5.1"
-    }
-}
-{
+    },
     "doctrine/annotations": {
         "version": "2.0",
         "recipe": {
@@ -365,9 +363,7 @@
     "endroid/qr-code-bundle": {
         "version": "5.0.1"
     },
-    "knplabs/knp-paginator-bundle": {
-        "version": "v5.9.0"
-    },
+    
     "phpunit/phpunit": {
         "version": "9.6",
         "recipe": {

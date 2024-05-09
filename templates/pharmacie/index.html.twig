@@ -23,7 +23,7 @@
             </tr>
         </thead>
         <tbody>
-        {% for pharmacie in pagination %}
+        {% for pharmacie in pharmacies %}
             <tr>
                 <td>{{ pharmacie.idPharmacie }}</td>
                 <td>{{ pharmacie.nom }}</td>
@@ -44,9 +44,7 @@
     </table>
 
     {# Pagination controls #}
-    <div class="pagination">
-        {{ knp_pagination_render(pagination) }}
-    </div>
+    
 
     <a href="{{ path('app_pharmacie_new') }}">Créer nouveau</a>
 {% endblock %}

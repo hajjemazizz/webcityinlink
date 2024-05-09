@@ -10,7 +10,7 @@ use App\Repository\PharmacieRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Endroid\QrCode\Builder\BuilderInterface;
 use Endroid\QrCode\Writer\Result\PngResult;
-use Knp\Component\Pager\PaginatorInterface;
+// use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -34,19 +34,15 @@ class PharmacieController extends AbstractController
         return 'data:image/png;base64,' . base64_encode($qrCodeResult->getString());
     }
     #[Route('/', name: 'app_pharmacie_index', methods: ['GET'])]
-    public function index(Request $request, EntityManagerInterface $entityManager, PaginatorInterface $paginator): Response
+    public function index(Request $request, EntityManagerInterface $entityManager): Response
     {
-        $queryBuilder = $entityManager->getRepository(Pharmacie::class)->createQueryBuilder('p');
+        $queryBuilder = $entityManager->getRepository(Pharmacie::class)->findAll();
 
-        $pagination = $paginator->paginate(
-            $queryBuilder, // QueryBuilder ou query pas encore exécutée
-            $request->query->getInt('page', 1), // Numéro de la page, 1 par défaut
-            10 // Nombre d'éléments par page
-        );
 
-        return $this->render('pharmacie/index.html.twig', [
-            'pagination' => $pagination
-        ]);
+        return $this->render('pharmacie/index.html.twig',
+            [
+                'pharmacies' => $queryBuilder,
+            ]);
     }
 
     #[Route('/new', name: 'app_pharmacie_new', methods: ['GET', 'POST'])]
@@ -100,16 +96,14 @@ class PharmacieController extends AbstractController
         ]);
     }
     #[Route('/search', name: 'app_pharmacie_search', methods: ['GET'])]
-    public function search(Request $request, EntityManagerInterface $entityManager, PaginatorInterface $paginator): Response
+    public function search(Request $request, EntityManagerInterface $entityManager): Response
     {
         $searchTerm = $request->query->get('term');
         $page = $request->query->getInt('page', 1);
     
-        $pagination = $entityManager->getRepository(Pharmacie::class)->findByTerm($searchTerm, $page, $paginator);
+        
     
-        return $this->render('pharmacie/index.html.twig', [
-            'pagination' => $pagination
-        ]);
+        return $this->render('pharmacie/index.html.twig');
     }
     
 

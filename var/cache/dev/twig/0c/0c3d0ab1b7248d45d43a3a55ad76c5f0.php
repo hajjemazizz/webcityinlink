@@ -236,6 +236,6 @@ class __TwigTemplate_e0dfbd7c26ddddcb53d6426cd8db91c6 extends Template
         </div>
     </div>
 </div>
-{% endblock %}", "security/reset_password.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\security\\reset_password.html.twig");
+{% endblock %}", "security/reset_password.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\security\\reset_password.html.twig");
     }
 }

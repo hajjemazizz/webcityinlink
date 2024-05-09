@@ -99,8 +99,11 @@ class __TwigTemplate_ca0906de63bd65db3b487f18aa83fd05 extends Template
                     </div>
                 </div>
                 <a href=\"contact.html\" class=\"nav-item nav-link\">reclamtion</a>
-                <a href=\"contact.html\" class=\"nav-item nav-link\">Pharmciee</a>
-                <a href=\"contact.html\" class=\"nav-item nav-link\">medicament</a>
+                <a href=\"";
+        // line 86
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("pharmacie_index");
+        yield "\"  class=\"nav-item nav-link\">Pharmciee</a>
+                <a href=\"contact.html\" class=\"nav-item nav-link\">Evennemments</a>
                 <a href=\"contact.html\" class=\"nav-item nav-link\">Contact</a>
 
             </div>
@@ -415,7 +418,7 @@ class __TwigTemplate_ca0906de63bd65db3b487f18aa83fd05 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  385 => 200,  379 => 197,  375 => 196,  371 => 195,  367 => 194,  362 => 191,  352 => 190,  308 => 109,  298 => 108,  270 => 32,  264 => 29,  245 => 12,  235 => 11,  215 => 7,  202 => 202,  200 => 190,  151 => 143,  149 => 108,  140 => 101,  135 => 99,  130 => 98,  125 => 96,  120 => 95,  114 => 93,  111 => 92,  109 => 91,  65 => 49,  63 => 11,  56 => 7,  48 => 1,);
+        return array (  388 => 200,  382 => 197,  378 => 196,  374 => 195,  370 => 194,  365 => 191,  355 => 190,  311 => 109,  301 => 108,  273 => 32,  267 => 29,  248 => 12,  238 => 11,  218 => 7,  205 => 202,  203 => 190,  154 => 143,  152 => 108,  143 => 101,  138 => 99,  133 => 98,  128 => 96,  123 => 95,  117 => 93,  114 => 92,  112 => 91,  104 => 86,  65 => 49,  63 => 11,  56 => 7,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -505,8 +508,8 @@ class __TwigTemplate_ca0906de63bd65db3b487f18aa83fd05 extends Template
                     </div>
                 </div>
                 <a href=\"contact.html\" class=\"nav-item nav-link\">reclamtion</a>
-                <a href=\"contact.html\" class=\"nav-item nav-link\">Pharmciee</a>
-                <a href=\"contact.html\" class=\"nav-item nav-link\">medicament</a>
+                <a href=\"{{ path('pharmacie_index') }}\"  class=\"nav-item nav-link\">Pharmciee</a>
+                <a href=\"contact.html\" class=\"nav-item nav-link\">Evennemments</a>
                 <a href=\"contact.html\" class=\"nav-item nav-link\">Contact</a>
 
             </div>
@@ -623,6 +626,6 @@ class __TwigTemplate_ca0906de63bd65db3b487f18aa83fd05 extends Template
     {% endblock %}
 </body>
 
-</html>", "home/index.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\home\\index.html.twig");
+</html>", "home/index.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\home\\index.html.twig");
     }
 }

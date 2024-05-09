@@ -302,6 +302,6 @@ class __TwigTemplate_2cde5587c4e4203d2c963692ad8c320e extends Template
             </div>
         </div>
     </div>
-{% endblock %}", "security/registration.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\security\\registration.html.twig");
+{% endblock %}", "security/registration.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\security\\registration.html.twig");
     }
 }

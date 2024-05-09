@@ -3402,6 +3402,6 @@ body.outlook p {
         min-width: 0;
     }
 }
-", "@email/zurb_2/main.css", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\main.css");
+", "@email/zurb_2/main.css", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\main.css");
     }
 }

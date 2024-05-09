@@ -2058,6 +2058,6 @@ class __TwigTemplate_426e5a1a07f538d64eafce7e1de0dd2e extends Template
     
   </body>
 </html>
-", "base-front.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\base-front.html.twig");
+", "base-front.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\base-front.html.twig");
     }
 }

@@ -194,6 +194,6 @@ class __TwigTemplate_9baf597a891077c851059db524adeb67 extends Template
     </div>
 
 </ul>
-", "admin/partials/sidebar.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\admin\\partials\\sidebar.html.twig");
+", "admin/partials/sidebar.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\admin\\partials\\sidebar.html.twig");
     }
 }

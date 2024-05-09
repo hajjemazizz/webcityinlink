@@ -282,6 +282,6 @@ class __TwigTemplate_1bce3b72c28e5f9581cd85a4116d1412 extends Template
 
 </body>
 
-</html>", "back/register.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\back\\register.html.twig");
+</html>", "back/register.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\back\\register.html.twig");
     }
 }

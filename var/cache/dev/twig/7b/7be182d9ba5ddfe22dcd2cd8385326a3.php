@@ -112,6 +112,6 @@ class __TwigTemplate_a23de53c65ca6c0b8d2d0d7e94b7ca9a extends Template
             </div>
         </div>
     </div>
-</div>", "admin/partials/_modal_logout.html.twig", "C:\\Users\\azizh\\Desktop\\project final\\User-Crud-Symfony5\\User-Crud-Symfony5\\templates\\admin\\partials\\_modal_logout.html.twig");
+</div>", "admin/partials/_modal_logout.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\admin\\partials\\_modal_logout.html.twig");
     }
 }

@@ -16,7 +16,16 @@ return [
         '/admin/utilisateur/add' => [[['_route' => 'admin_user_add', '_controller' => 'App\\Controller\\AdminUserController::add'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/back' => [[['_route' => 'app_back', '_controller' => 'App\\Controller\\BackController::index'], null, null, null, false, false, null]],
         '/en' => [[['_route' => 'app_front', '_controller' => 'App\\Controller\\FrontController::index'], null, null, null, false, false, null]],
-        '/' => [[['_route' => 'home_index', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
+        '/pharmaciee' => [[['_route' => 'pharmacie_index', '_controller' => 'App\\Controller\\HomeController::index'], null, ['GET' => 0], null, false, false, null]],
+        '/' => [[['_route' => 'home_index', '_controller' => 'App\\Controller\\HomeController::indexpharmacie'], null, ['GET' => 0], null, false, false, null]],
+        '/medicament' => [[['_route' => 'app_medicament_index', '_controller' => 'App\\Controller\\MedicamentController::index'], null, ['GET' => 0], null, true, false, null]],
+        '/medicament/stat' => [[['_route' => 'app_medicament_stat', '_controller' => 'App\\Controller\\MedicamentController::stat'], null, ['GET' => 0], null, false, false, null]],
+        '/medicament/new' => [[['_route' => 'app_medicament_new', '_controller' => 'App\\Controller\\MedicamentController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        '/medicament/search' => [[['_route' => 'app_medicament_search', '_controller' => 'App\\Controller\\MedicamentController::search'], null, ['GET' => 0], null, false, false, null]],
+        '/pharmacie' => [[['_route' => 'app_pharmacie_index', '_controller' => 'App\\Controller\\PharmacieController::index'], null, ['GET' => 0], null, true, false, null]],
+        '/pharmacie/new' => [[['_route' => 'app_pharmacie_new', '_controller' => 'App\\Controller\\PharmacieController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        '/pharmacie/search' => [[['_route' => 'app_pharmacie_search', '_controller' => 'App\\Controller\\PharmacieController::search'], null, ['GET' => 0], null, false, false, null]],
+        '/reclamation' => [[['_route' => 'app_reclamation', '_controller' => 'App\\Controller\\ReclamationController::index'], null, null, null, false, false, null]],
         '/inscription' => [[['_route' => 'registration', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController1::register'], null, null, null, false, false, null]],
         '/verify/email' => [[['_route' => 'app_verify_email', '_controller' => 'App\\Controller\\RegistrationController1::verifyUserEmail'], null, null, null, false, false, null]],
@@ -42,21 +51,36 @@ return [
                     .')'
                     .'|([^/]++)/suppression(*:80)'
                 .')'
-                .'|/mot\\-de\\-passe/nouveau\\-mot\\-de\\-passe(?:/([^/]++))?(*:141)'
-                .'|/qr\\-code/([^/]++)/([\\w\\W]+)(*:177)'
+                .'|/m(?'
+                    .'|edicament/([^/]++)(?'
+                        .'|(*:114)'
+                        .'|/edit(*:127)'
+                        .'|(*:135)'
+                    .')'
+                    .'|ot\\-de\\-passe/nouveau\\-mot\\-de\\-passe(?:/([^/]++))?(*:195)'
+                .')'
+                .'|/pharmacie/(?'
+                    .'|pharmacie/([^/]++)/medicaments(*:248)'
+                    .'|([^/]++)(?'
+                        .'|(*:267)'
+                        .'|/edit(*:280)'
+                        .'|(*:288)'
+                    .')'
+                .')'
+                .'|/qr\\-code/([^/]++)/([\\w\\W]+)(*:326)'
                 .'|/_(?'
-                    .'|error/(\\d+)(?:\\.([^/]++))?(*:216)'
-                    .'|wdt/([^/]++)(*:236)'
+                    .'|error/(\\d+)(?:\\.([^/]++))?(*:365)'
+                    .'|wdt/([^/]++)(*:385)'
                     .'|profiler/([^/]++)(?'
                         .'|/(?'
-                            .'|search/results(*:282)'
-                            .'|router(*:296)'
+                            .'|search/results(*:431)'
+                            .'|router(*:445)'
                             .'|exception(?'
-                                .'|(*:316)'
-                                .'|\\.css(*:329)'
+                                .'|(*:465)'
+                                .'|\\.css(*:478)'
                             .')'
                         .')'
-                        .'|(*:339)'
+                        .'|(*:488)'
                     .')'
                 .')'
             .')/?$}sDu',
@@ -65,15 +89,22 @@ return [
         40 => [[['_route' => 'admin_user_show', '_controller' => 'App\\Controller\\AdminUserController::show'], ['id'], ['GET' => 0], null, false, true, null]],
         52 => [[['_route' => 'admin_user_edit', '_controller' => 'App\\Controller\\AdminUserController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         80 => [[['_route' => 'admin_user_delete', '_controller' => 'App\\Controller\\AdminUserController::delete'], ['id'], null, null, false, false, null]],
-        141 => [[['_route' => 'reset_password', 'token' => null, '_controller' => 'App\\Controller\\ResetPasswordController::resetPassword'], ['token'], null, null, false, true, null]],
-        177 => [[['_route' => 'qr_code_generate', '_controller' => 'Endroid\\QrCodeBundle\\Controller\\GenerateController'], ['builder', 'data'], null, null, false, true, null]],
-        216 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
-        236 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
-        282 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
-        296 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
-        316 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
-        329 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        339 => [
+        114 => [[['_route' => 'app_medicament_show', '_controller' => 'App\\Controller\\MedicamentController::show'], ['idMedicament'], ['GET' => 0], null, false, true, null]],
+        127 => [[['_route' => 'app_medicament_edit', '_controller' => 'App\\Controller\\MedicamentController::edit'], ['idMedicament'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        135 => [[['_route' => 'app_medicament_delete', '_controller' => 'App\\Controller\\MedicamentController::delete'], ['idMedicament'], ['POST' => 0], null, false, true, null]],
+        195 => [[['_route' => 'reset_password', 'token' => null, '_controller' => 'App\\Controller\\ResetPasswordController::resetPassword'], ['token'], null, null, false, true, null]],
+        248 => [[['_route' => 'show_medicaments', '_controller' => 'App\\Controller\\PharmacieController::showMedicaments'], ['id'], null, null, false, false, null]],
+        267 => [[['_route' => 'app_pharmacie_show', '_controller' => 'App\\Controller\\PharmacieController::show'], ['idPharmacie'], ['GET' => 0], null, false, true, null]],
+        280 => [[['_route' => 'app_pharmacie_edit', '_controller' => 'App\\Controller\\PharmacieController::edit'], ['idPharmacie'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        288 => [[['_route' => 'app_pharmacie_delete', '_controller' => 'App\\Controller\\PharmacieController::delete'], ['idPharmacie'], ['POST' => 0], null, false, true, null]],
+        326 => [[['_route' => 'qr_code_generate', '_controller' => 'Endroid\\QrCodeBundle\\Controller\\GenerateController'], ['builder', 'data'], null, null, false, true, null]],
+        365 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
+        385 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
+        431 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
+        445 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
+        465 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
+        478 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
+        488 => [
             [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
