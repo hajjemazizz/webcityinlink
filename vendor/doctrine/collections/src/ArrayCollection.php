@@ -59,6 +59,7 @@ class ArrayCollection implements Collection, Selectable, Stringable
     /**
      * Initializes a new ArrayCollection.
      *
+     * @param array $elements
      * @psalm-param array<TKey,T> $elements
      */
     public function __construct(array $elements = [])
@@ -370,8 +371,6 @@ class ArrayCollection implements Collection, Selectable, Stringable
 
     /**
      * {@inheritDoc}
-     *
-     * @psalm-param Closure(T, TKey):bool $p
      *
      * @return static
      * @psalm-return static<TKey,T>

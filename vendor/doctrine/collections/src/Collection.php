@@ -96,8 +96,6 @@ interface Collection extends ReadableCollection, ArrayAccess
     /**
      * {@inheritDoc}
      *
-     * @psalm-param Closure(T, TKey):bool $p
-     *
      * @return Collection<mixed> A collection with the results of the filter operation.
      * @psalm-return Collection<TKey, T>
      */
@@ -105,9 +103,7 @@ interface Collection extends ReadableCollection, ArrayAccess
 
     /**
      * {@inheritDoc}
-     *
-     * @psalm-param Closure(TKey, T):bool $p
-     *
+
      * @return Collection<mixed>[] An array with two elements. The first element contains the collection
      *                      of elements where the predicate returned TRUE, the second element
      *                      contains the collection of elements where the predicate returned FALSE.

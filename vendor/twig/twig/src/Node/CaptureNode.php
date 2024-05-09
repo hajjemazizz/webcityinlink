@@ -44,11 +44,9 @@ class CaptureNode extends Node
             ->indent()
             ->subcompile($this->getNode('body'))
             ->outdent()
-            ->write("})() ?? new \EmptyIterator()")
+            ->write("})() ?? new \EmptyIterator())")
         ;
         if ($useYield) {
-            $compiler->raw(', false))');
-        } else {
             $compiler->raw(')');
         }
         if (!$this->getAttribute('raw')) {

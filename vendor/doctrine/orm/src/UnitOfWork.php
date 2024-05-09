@@ -1292,8 +1292,6 @@ class UnitOfWork implements PropertyChangedListener
         $eventsToDispatch = [];
 
         foreach ($entities as $entity) {
-            $this->removeFromIdentityMap($entity);
-
             $oid       = spl_object_id($entity);
             $class     = $this->em->getClassMetadata(get_class($entity));
             $persister = $this->getEntityPersister($class->name);
@@ -1668,6 +1666,8 @@ class UnitOfWork implements PropertyChangedListener
         if (! $this->isInIdentityMap($entity)) {
             return;
         }
+
+        $this->removeFromIdentityMap($entity);
 
         unset($this->entityUpdates[$oid]);
 
@@ -3224,13 +3224,7 @@ EXCEPTION
      *
      * @param PersistentCollection[] $collections
      * @param array<string, mixed>   $mapping
-     * @psalm-param array{
-     *     targetEntity: class-string,
-     *     sourceEntity: class-string,
-     *     mappedBy: string,
-     *     indexBy: string|null,
-     *     orderBy: array<string, string>|null
-     * } $mapping
+     * @psalm-param array{targetEntity: class-string, sourceEntity: class-string, mappedBy: string, indexBy: string|null} $mapping
      */
     private function eagerLoadCollections(array $collections, array $mapping): void
     {
@@ -3247,7 +3241,7 @@ EXCEPTION
                 $entities[] = $collection->getOwner();
             }
 
-            $found = $this->getEntityPersister($targetEntity)->loadAll([$mappedBy => $entities], $mapping['orderBy'] ?? null);
+            $found = $this->getEntityPersister($targetEntity)->loadAll([$mappedBy => $entities]);
 
             $targetClass    = $this->em->getClassMetadata($targetEntity);
             $targetProperty = $targetClass->getReflectionProperty($mappedBy);

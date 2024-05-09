@@ -11,11 +11,9 @@
 
 use Twig\Environment;
 use Twig\Extension\EscaperExtension;
-use Twig\Node\Node;
 
 /**
  * @internal
- *
  * @deprecated since Twig 3.9
  */
 function twig_raw_filter($string)
@@ -27,7 +25,6 @@ function twig_raw_filter($string)
 
 /**
  * @internal
- *
  * @deprecated since Twig 3.9
  */
 function twig_escape_filter(Environment $env, $string, $strategy = 'html', $charset = null, $autoescape = false)
@@ -35,16 +32,4 @@ function twig_escape_filter(Environment $env, $string, $strategy = 'html', $char
     trigger_deprecation('twig/twig', '3.9', 'Using the internal "%s" function is deprecated.', __FUNCTION__);
 
     return EscaperExtension::escape($env, $string, $strategy, $charset, $autoescape);
-}
-
-/**
- * @internal
- *
- * @deprecated since Twig 3.9
- */
-function twig_escape_filter_is_safe(Node $filterArgs)
-{
-    trigger_deprecation('twig/twig', '3.9', 'Using the internal "%s" function is deprecated.', __FUNCTION__);
-
-    return EscaperExtension::escapeFilterIsSafe($filterArgs);
 }

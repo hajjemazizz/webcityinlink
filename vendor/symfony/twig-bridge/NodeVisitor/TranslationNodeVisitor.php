@@ -18,14 +18,14 @@ use Twig\Node\Expression\ConstantExpression;
 use Twig\Node\Expression\FilterExpression;
 use Twig\Node\Expression\FunctionExpression;
 use Twig\Node\Node;
-use Twig\NodeVisitor\NodeVisitorInterface;
+use Twig\NodeVisitor\AbstractNodeVisitor;
 
 /**
  * TranslationNodeVisitor extracts translation messages.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */
-final class TranslationNodeVisitor implements NodeVisitorInterface
+final class TranslationNodeVisitor extends AbstractNodeVisitor
 {
     public const UNDEFINED_DOMAIN = '_undefined';
 
@@ -49,7 +49,10 @@ final class TranslationNodeVisitor implements NodeVisitorInterface
         return $this->messages;
     }
 
-    public function enterNode(Node $node, Environment $env): Node
+    /**
+     * {@inheritdoc}
+     */
+    protected function doEnterNode(Node $node, Environment $env): Node
     {
         if (!$this->enabled) {
             return $node;
@@ -98,7 +101,10 @@ final class TranslationNodeVisitor implements NodeVisitorInterface
         return $node;
     }
 
-    public function leaveNode(Node $node, Environment $env): ?Node
+    /**
+     * {@inheritdoc}
+     */
+    protected function doLeaveNode(Node $node, Environment $env): ?Node
     {
         return $node;
     }

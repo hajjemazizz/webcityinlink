@@ -147,8 +147,6 @@ abstract class AbstractObjectNormalizer extends AbstractNormalizer
      */
     public function normalize($object, ?string $format = null, array $context = [])
     {
-        $context['_read_attributes'] = true;
-
         if (!isset($context['cache_key'])) {
             $context['cache_key'] = $this->getCacheKey($format, $context);
         }
@@ -361,8 +359,6 @@ abstract class AbstractObjectNormalizer extends AbstractNormalizer
      */
     public function denormalize($data, string $type, ?string $format = null, array $context = [])
     {
-        $context['_read_attributes'] = false;
-
         if (!isset($context['cache_key'])) {
             $context['cache_key'] = $this->getCacheKey($format, $context);
         }
@@ -371,10 +367,6 @@ abstract class AbstractObjectNormalizer extends AbstractNormalizer
 
         if (null === $data && isset($context['value_type']) && $context['value_type'] instanceof Type && $context['value_type']->isNullable()) {
             return null;
-        }
-
-        if (XmlEncoder::FORMAT === $format && !\is_array($data)) {
-            $data = ['#' => $data];
         }
 
         $allowedAttributes = $this->getAllowedAttributes($type, $context, true);
