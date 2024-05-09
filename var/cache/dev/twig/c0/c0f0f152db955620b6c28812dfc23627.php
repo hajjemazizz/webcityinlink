@@ -1178,6 +1178,6 @@ class __TwigTemplate_3a42271dce07d825d5fae33b411fdb5b extends Template
 
     
   </body>
-</html>", "about.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\about.html.twig");
+</html>", "about.html.twig", "C:\\Users\\azizh\\Desktop\\Cityinlink\\templates\\about.html.twig");
     }
 }

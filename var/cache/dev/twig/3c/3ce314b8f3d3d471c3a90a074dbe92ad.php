@@ -626,6 +626,6 @@ class __TwigTemplate_ca0906de63bd65db3b487f18aa83fd05 extends Template
     {% endblock %}
 </body>
 
-</html>", "home/index.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\home\\index.html.twig");
+</html>", "home/index.html.twig", "C:\\Users\\azizh\\Desktop\\Cityinlink\\templates\\home\\index.html.twig");
     }
 }

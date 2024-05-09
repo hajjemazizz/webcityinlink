@@ -242,6 +242,6 @@ class __TwigTemplate_464c030922a61281f9120f58bf309a60 extends Template
         </div>
     </div>
 </div>
-{% endblock %}", "security/forgot_password.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\security\\forgot_password.html.twig");
+{% endblock %}", "security/forgot_password.html.twig", "C:\\Users\\azizh\\Desktop\\Cityinlink\\templates\\security\\forgot_password.html.twig");
     }
 }

@@ -105,6 +105,6 @@ class __TwigTemplate_b774553282619f829a14eea5f76f5b46 extends Template
 <p>
     Cheers!
 </p>
-", "registration/confirmation_email.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\registration\\confirmation_email.html.twig");
+", "registration/confirmation_email.html.twig", "C:\\Users\\azizh\\Desktop\\Cityinlink\\templates\\registration\\confirmation_email.html.twig");
     }
 }

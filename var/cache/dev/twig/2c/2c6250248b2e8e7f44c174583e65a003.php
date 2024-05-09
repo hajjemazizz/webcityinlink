@@ -113,6 +113,6 @@ class __TwigTemplate_29d8d922caa01180eca19c4288dbd34a extends Template
 \t\t</ul>
 \t</div>
 </nav>
-", "partials/_navbar.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\partials\\_navbar.html.twig");
+", "partials/_navbar.html.twig", "C:\\Users\\azizh\\Desktop\\Cityinlink\\templates\\partials\\_navbar.html.twig");
     }
 }

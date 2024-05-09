@@ -113,6 +113,6 @@ class __TwigTemplate_a2ce6aa98edd38a91ad46eca5c6e6610 extends Template
     {% if segment in app.request.attributes.get('_route') %}
         active
     {% endif %}
-{% endmacro %}", "partials/_macro.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\partials\\_macro.html.twig");
+{% endmacro %}", "partials/_macro.html.twig", "C:\\Users\\azizh\\Desktop\\Cityinlink\\templates\\partials\\_macro.html.twig");
     }
 }

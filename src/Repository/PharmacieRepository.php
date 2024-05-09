@@ -23,19 +23,19 @@ class PharmacieRepository extends ServiceEntityRepository
     /**
      * Find pharmacies by search term with pagination.
      *
-     * @param string $term The search term
-     * @param int $page The current page number
+     * @param string $term
+     * @return Pharmacie[]
      
      */
-    public function findByTerm($term, $page)
-{
-    $queryBuilder = $this->createQueryBuilder('p')
-        ->andWhere('p.nom LIKE :term OR p.adresse LIKE :term')
-        ->setParameter('term', '%' . $term . '%')
-        ->getQuery()
-        ->getResult();
+    
 
-    return $queryBuilder;
-}
+    public function findByTerm(string $term)
+    {
+        return $this->createQueryBuilder('m')
+            ->andWhere('m.nom LIKE :term OR m.adresse LIKE :term')
+            ->setParameter('term', '%' . $term . '%')
+            ->getQuery()
+            ->getResult();
+    }
 
 }

@@ -80,6 +80,6 @@ class __TwigTemplate_d716207a70aeffe2e913ac974f94055d extends Template
     <line x1=\"7\" y1=\"7\" x2=\"7\" y2=\"17\"></line>
     <line x1=\"4\" y1=\"8\" x2=\"4\" y2=\"16\"></line>
 </svg>
-", "@DoctrineMigrations/Collector/icon-v3.svg", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\vendor\\doctrine\\doctrine-migrations-bundle\\Resources\\views\\Collector\\icon-v3.svg");
+", "@DoctrineMigrations/Collector/icon-v3.svg", "C:\\Users\\azizh\\Desktop\\Cityinlink\\vendor\\doctrine\\doctrine-migrations-bundle\\Resources\\views\\Collector\\icon-v3.svg");
     }
 }

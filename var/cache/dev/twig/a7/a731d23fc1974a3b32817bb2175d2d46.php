@@ -611,6 +611,6 @@ class __TwigTemplate_624fc32eba98892c15b56791be3405e1 extends Template
         }
     </script>
   <script src=\"{{ asset(\"js/dataTable/user.js\") }}\"></script>
-{% endblock %}", "admin/user/index.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\admin\\user\\index.html.twig");
+{% endblock %}", "admin/user/index.html.twig", "C:\\Users\\azizh\\Desktop\\Cityinlink\\templates\\admin\\user\\index.html.twig");
     }
 }

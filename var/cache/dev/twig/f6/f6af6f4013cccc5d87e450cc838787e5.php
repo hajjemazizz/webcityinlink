@@ -270,6 +270,6 @@ class __TwigTemplate_57d81d169ab04a7aa414f5a9b50c7c9a extends Template
         <script src=\"{{ asset('sbadmin2/js/sb-admin-2.min.js') }}\"></script>
     </body>
 </html>
-", "admin/base.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\admin\\base.html.twig");
+", "admin/base.html.twig", "C:\\Users\\azizh\\Desktop\\Cityinlink\\templates\\admin\\base.html.twig");
     }
 }

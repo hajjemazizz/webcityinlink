@@ -383,6 +383,6 @@ class __TwigTemplate_eb154a0ddd3480bfc2fdf7ab92e15630 extends Template
 
 </nav>
 <!-- End of Topbar -->
-", "admin/partials/topbar.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\admin\\partials\\topbar.html.twig");
+", "admin/partials/topbar.html.twig", "C:\\Users\\azizh\\Desktop\\Cityinlink\\templates\\admin\\partials\\topbar.html.twig");
     }
 }

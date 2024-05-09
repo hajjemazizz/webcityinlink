@@ -98,12 +98,14 @@ class PharmacieController extends AbstractController
     #[Route('/search', name: 'app_pharmacie_search', methods: ['GET'])]
     public function search(Request $request, EntityManagerInterface $entityManager): Response
     {
-        $searchTerm = $request->query->get('term');
-        $page = $request->query->getInt('page', 1);
+        $searchTerm = $request->query->get('term', '');
+        $pharmacies = $entityManager->getRepository(Pharmacie::class)->findByTerm($searchTerm);
     
         
     
-        return $this->render('pharmacie/index.html.twig');
+        return $this->render('pharmacie/index.html.twig',[
+            "pharmacies " =>  $pharmacies
+        ]);
     }
     
 

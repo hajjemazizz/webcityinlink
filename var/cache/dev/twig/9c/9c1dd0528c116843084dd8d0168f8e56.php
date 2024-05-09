@@ -797,6 +797,6 @@ class __TwigTemplate_e73c6c5b71dcc1edd8899451c1d8fa16 extends Template
     <script src=\"js/main.js\"></script>
 </body>
 
-</html>", "admin/layout.html.twig", "C:\\Users\\Yosri Elhadj\\OneDrive - ESPRIT\\Bureau\\New folder (5)\\webcityinlink\\templates\\admin\\layout.html.twig");
+</html>", "admin/layout.html.twig", "C:\\Users\\azizh\\Desktop\\Cityinlink\\templates\\admin\\layout.html.twig");
     }
 }
